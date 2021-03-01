@@ -5,7 +5,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t danlan/react-test -f ./client/Dockerfile.dev ./client
+  - docker build -t danlan26/react-test -f ./client/Dockerfile.dev ./client
 
 script:
   - docker run -e CI=true danlan26/react-test npm test -- --coverage
